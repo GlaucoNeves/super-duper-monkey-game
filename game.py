@@ -7,7 +7,7 @@ app = Flask(__name__)
 @app.route("/")
 def hello():
     return "Hello World!"
-
+#tredry
 @app.route("/start/<table_name>")
 def open_game(table_name):
     redis.sadd("games", table_name)
